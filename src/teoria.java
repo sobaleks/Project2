@@ -1,3 +1,4 @@
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class teoria {
@@ -124,7 +125,7 @@ int y=10;
 
 
 
-*/
+
         System.out.println("Что такое синее с рогами и набитый зайцеми");
 Scanner scanner = new Scanner(System.in);
 String otvet;
@@ -151,6 +152,43 @@ break;
 
 
 
+        Scanner scanner = new Scanner(System.in);
+        int x = scanner.nextInt();
+        double mas_double[] = new double[x];
+        for (int i = 0; i < mas_double.length; i++) {
+            mas_double[i] = Math.random();
+            System.out.println(mas_double[i]);
+        }
+        for (int i = 0; i < mas_double.length; i++) {
+            if (mas_double[i] % 2 != 0) {
+                System.out.println(Math.pow(mas_double[i], 2));
+            }
+        }
+        for (int i = mas_double.length - 1; i >= 0; i--) {
+            System.out.println(mas_double[i]);
+        }
 
+
+        int array[] = {1, 2, 3, 4, 5};
+        for (int number : array) {                 // переменная : сам массив
+            System.out.println(number);
+        }
+*/
+        //Arrays
+
+        int mas[]= {1,11,2,3,4};
+        System.out.println(Arrays.toString(mas)); // вывод в виде строки
+        System.out.println(Arrays.binarySearch(mas, 2)); // поиск элемента в массиве
+        Arrays.sort(mas); // сортировка
+        System.out.println(Arrays.toString(mas));
+
+        int max = mas[0];
+        for(int i =0; i< mas.length; i++){
+            if(mas[i]>max){
+                max = mas[i];
+            }
+
+
+        }System.out.println(max);
     }
 }
